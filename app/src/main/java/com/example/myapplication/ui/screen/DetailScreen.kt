@@ -32,6 +32,7 @@ import androidx.navigation.Navigation
 import androidx.navigation.compose.rememberNavController
 import coil.compose.rememberAsyncImagePainter
 import com.example.jelajah.ui.viewmodel.MainViewModel
+import com.example.myapplication.helper.formatWithCommas
 import com.example.myapplication.ui.theme.Purple40
 import com.example.myapplication.ui.theme.Purple80
 
@@ -63,7 +64,7 @@ fun DetailScreen(viewModel: MainViewModel, navController: NavController) {
 
                 Column(Modifier.padding(10.dp).fillMaxWidth()) {
                     Text(
-                        country?.name?.common ?: "Country Name" ,
+                        country?.name?.common ?: "Empty" ,
                         style = TextStyle(
                             fontSize = 30.sp,
                             fontWeight = FontWeight.Bold,
@@ -71,7 +72,7 @@ fun DetailScreen(viewModel: MainViewModel, navController: NavController) {
                         )
                     )
                     Text(
-                        "(${country?.name?.official ?: "Country Name"})",
+                        "(${country?.name?.official ?: "Empty"})",
                         style = TextStyle(
                             fontSize = 16.sp,
                             fontWeight = FontWeight.Bold,
@@ -79,8 +80,9 @@ fun DetailScreen(viewModel: MainViewModel, navController: NavController) {
                         )
                     )
                     Spacer(modifier = Modifier.height(20.dp))
-                    CountryInformationRow(label = "Capital", value = country?.capital?.get(0) ?: "Currencies")
-                    CountryInformationRow(label = "Population", value = country?.population.toString())
+                    CountryInformationRow(label = "Region", value = country?.region ?: "Empty")
+                    CountryInformationRow(label = "Capital", value = country?.capital?.get(0) ?: "Empty")
+                    CountryInformationRow(label = "Population", value = formatWithCommas(country?.population ?: 0))
             }
 
         }
@@ -90,10 +92,10 @@ fun DetailScreen(viewModel: MainViewModel, navController: NavController) {
 
 @Composable
 fun CountryInformationRow(label: String, value : String){
-    Row (Modifier.fillMaxWidth(0.7f), horizontalArrangement = Arrangement.SpaceBetween){
-        Text(label, modifier = Modifier.weight(2f))
+    Row (Modifier.fillMaxWidth(1f), horizontalArrangement = Arrangement.SpaceBetween){
+        Text(label, modifier = Modifier.weight(1.7f))
         Text(":",modifier = Modifier.weight(0.5f))
-        Text(value,modifier = Modifier.weight(2f))
+        Text(value,modifier = Modifier.weight(5f))
     }
 }
 @Preview
