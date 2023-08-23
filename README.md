@@ -11,6 +11,8 @@ Welcome to the Jelajahi! This app showcases the power of Jetpack Compose, a mode
 - **Animated UI:** Jetpack Compose's declarative nature makes it easy to implement smooth animations and transitions, enhancing the overall user experience.
 
 <p align="center">
-  <img src="https://i.imgur.com/0AFIyJd.png" alt="Image Alt Text" width="400" height="300">
+  <img src="https://i.imgur.com/FB2sC6I.png" alt="Image Alt Text" width="300" >
+  <img src="https://i.imgur.com/0AFIyJd.png" alt="Image Alt Text" width="300" >
+  <img src="https://i.imgur.com/g6KBmf8.png" alt="Image Alt Text" width="300" >
 </p>
 
