@@ -10,3 +10,4 @@ Welcome to the Jelajahi! This app showcases the power of Jetpack Compose, a mode
 
 - **Animated UI:** Jetpack Compose's declarative nature makes it easy to implement smooth animations and transitions, enhancing the overall user experience.
 
+![Image 1]([https://drive.google.com/uc?export=view&id=IMAGE_ID_1](https://drive.google.com/drive/folders/1XVxOnFHZbSZAuoaKPQwm0erz2AyAPhil)https://drive.google.com/drive/folders/1XVxOnFHZbSZAuoaKPQwm0erz2AyAPhil)
